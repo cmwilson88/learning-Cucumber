@@ -2,8 +2,8 @@ const seleniumWebDriver = require('selenium-webdriver');
 const {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function({Given, When, Then}) {
-	Given('I am on the Cucumber.js GitHub repository', function() {
-		return this.driver.get('https://www.github.com/cucumber/cucumber-js/tree/master');
+	Given('I am on the {string}', function(text) {
+		return this.driver.get(text);
 	})
 
      When('I click on {string}', function (text) {
@@ -16,7 +16,7 @@ defineSupportCode(function({Given, When, Then}) {
      	let xpath = "//*[contains(text(),'" + text + "')]";
      	let condition = seleniumWebDriver.until.elementLocated({xpath: xpath});
      	console.log(xpath, condition)
-     	return this.driver.wait(condition, 5000);
+     	return this.driver.wait(condition, 10000);
      });
 
 })
