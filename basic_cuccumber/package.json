@@ -1,0 +1,15 @@
+{
+  "name": "basic_cuccumber",
+  "version": "1.0.0",
+  "description": "First Cucumber app",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cucumber": "^3.0.5"
+  }
+}
