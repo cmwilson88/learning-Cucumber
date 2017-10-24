@@ -1,0 +1,26 @@
+{
+  "name": "cucumber-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "wdio ./src/test/wdio.conf.js",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.32.3",
+    "cucumber": "^3.0.6",
+    "chai": "^4.1.2",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-selenium-standalone-service": "0.0.7",
+    "selenium-standalone": "^6.11.0",
+    "wdio-cucumber-framework": "^1.0.2",
+    "webdriverio": "^4.8.0"
+  }
+}
